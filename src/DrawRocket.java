@@ -1,7 +1,7 @@
 // Program Draws a Rocket with Special Characters
 // If the Value of constant SIZE is changed So does the size of the Rocket
 //Created by Aaron Renfroe Fall 2016
-public class Main {
+public class DrawRocket {
 
     private static final int SIZE = 3;
             ;
