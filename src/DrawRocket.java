@@ -8,7 +8,7 @@ public class DrawRocket {
     private static final int WIDTH = (SIZE*4)+2;
 
     public static void main(String[] args) {
-        //if (SIZE>0 && SIZE<=150) {
+
             noseCone();
             sepLine();
             upPoints();
@@ -18,10 +18,7 @@ public class DrawRocket {
             upPoints();
             sepLine();
             noseCone();
-        //}
-        //else{
-        //    error();
-        //}
+
     }
 
     private static void noseCone() {
@@ -116,25 +113,6 @@ public class DrawRocket {
 
         }
     }      //prints ..\/.. section
-    private static void error(){
-        if (SIZE < 0){
-            System.out.println("***************************************************\n");
-            System.out.println("Ut OHhhs, Your rocket must exist in order to launch");
-            System.out.println("        Try entering a Size larger than 0\n");
-            System.out.println("***************************************************\n");
-
-        }
-        else if (SIZE > 150){
-            System.out.println("********************************************************\n");
-            System.out.println("Ut OHhhs, Your Rocket is too big to fit on the launchpad");
-            System.out.println("           Try entering a Size less than 150\n");
-            System.out.println("********************************************************\n");
-        }
-        else {
-            System.out.println("********************************************************\n");
-            System.out.println("   I have a feeling that you did not enter a Number \n");
-            System.out.println("********************************************************\n");
-        }
-    }           // error handling uses conditionals
+   
 }
 
