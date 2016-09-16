@@ -45,7 +45,7 @@ public class Main {
             System.out.println("");
 
         }
-    }
+    }       //prints nose cone and nozzel
     public static void sepLine(){
         System.out.print("+");
         for (int i = 0; i < WIDTH/2-1; i++){
@@ -53,7 +53,7 @@ public class Main {
         }
         System.out.print("+");
         System.out.println();
-    }
+    }         //prints the seperation Line
 
     public static void upPoints(){
 
@@ -81,7 +81,7 @@ public class Main {
 
         }
 
-    }
+    }        //prints ../\..section
     public static void downPoints(){
         for (int i = 1; i <=SIZE; i++){
             System.out.print("|");
@@ -106,7 +106,7 @@ public class Main {
             System.out.print("|\n");
 
         }
-    }
+    }      //prints ..\/.. section
     public static void error(){
         if (SIZE < 0){
             System.out.println("***************************************************\n");
@@ -126,6 +126,6 @@ public class Main {
             System.out.println("   I have a feeling that you did not enter a Number \n");
             System.out.println("********************************************************\n");
         }
-    }
+    }           // error handling
 }
 
