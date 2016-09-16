@@ -4,7 +4,7 @@
 public class DrawRocket {
 
     private static final int SIZE = 3;
-            ;
+
     private static final int WIDTH = (SIZE*4)+2;
 
     public static void main(String[] args) {
@@ -113,6 +113,6 @@ public class DrawRocket {
 
         }
     }      //prints ..\/.. section
-   
+
 }
 
