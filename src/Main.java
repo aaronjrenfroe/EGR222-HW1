@@ -1,11 +1,11 @@
 public class Main {
 
-    public static final int SIZE = 5;
+    public static final int SIZE = 3;
             ;
     public static final int WIDTH = (SIZE*4)+2;
 
     public static void main(String[] args) {
-        if (SIZE>0 && SIZE<=150) {
+        //if (SIZE>0 && SIZE<=150) {
             noseCone();
             sepLine();
             upPoints();
@@ -15,10 +15,10 @@ public class Main {
             upPoints();
             sepLine();
             noseCone();
-        }
-        else{
-            error();
-        }
+        //}
+        //else{
+        //    error();
+        //}
     }
 
     public static void noseCone() {
@@ -126,6 +126,6 @@ public class Main {
             System.out.println("   I have a feeling that you did not enter a Number \n");
             System.out.println("********************************************************\n");
         }
-    }           // error handling
+    }           // error handling uses conditionals
 }
 
