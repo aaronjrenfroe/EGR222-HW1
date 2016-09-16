@@ -1,8 +1,11 @@
+// Program Draws a Rocket with Special Characters
+// If the Value of constant SIZE is changed So does the size of the Rocket
+//Created by Aaron Renfroe Fall 2016
 public class Main {
 
-    public static final int SIZE = 3;
+    private static final int SIZE = 3;
             ;
-    public static final int WIDTH = (SIZE*4)+2;
+    private static final int WIDTH = (SIZE*4)+2;
 
     public static void main(String[] args) {
         //if (SIZE>0 && SIZE<=150) {
@@ -21,7 +24,7 @@ public class Main {
         //}
     }
 
-    public static void noseCone() {
+    private static void noseCone() {
         int numberOfSpaces = (WIDTH-4)/2;
 
         for (int i = 0; i < numberOfSpaces; i++) { //height
@@ -46,16 +49,22 @@ public class Main {
 
         }
     }       //prints nose cone and nozzel
-    public static void sepLine(){
+    private static void sepLine(){
+
         System.out.print("+");
+
         for (int i = 0; i < WIDTH/2-1; i++){
+
             System.out.print("=*");
         }
+
         System.out.print("+");
+
         System.out.println();
+
     }         //prints the seperation Line
 
-    public static void upPoints(){
+    private static void upPoints(){
 
         for (int i = 1; i <=SIZE; i++){
             System.out.print("|");
@@ -82,7 +91,7 @@ public class Main {
         }
 
     }        //prints ../\..section
-    public static void downPoints(){
+    private static void downPoints(){
         for (int i = 1; i <=SIZE; i++){
             System.out.print("|");
 
@@ -107,7 +116,7 @@ public class Main {
 
         }
     }      //prints ..\/.. section
-    public static void error(){
+    private static void error(){
         if (SIZE < 0){
             System.out.println("***************************************************\n");
             System.out.println("Ut OHhhs, Your rocket must exist in order to launch");
