@@ -3,24 +3,24 @@
 //Created by Aaron Renfroe Fall 2016
 public class DrawRocket {
 
-    private static final int SIZE = 3;
+    private static final int SIZE = 3  ;
 
     private static final int WIDTH = (SIZE*4)+2;
 
     public static void main(String[] args) {
 
-            noseCone();
-            sepLine();
-            upPoints();
-            downPoints();
-            sepLine();
-            downPoints();
-            upPoints();
-            sepLine();
-            noseCone();
+        noseCone();
+        sepLine();
+        upPoints();
+        downPoints();
+        sepLine();
+        downPoints();
+        upPoints();
+        sepLine();
+        noseCone();
 
     }
-
+    //prints nose cone / nozzel
     private static void noseCone() {
         int numberOfSpaces = (WIDTH-4)/2;
 
@@ -45,22 +45,24 @@ public class DrawRocket {
             System.out.println("");
 
         }
-    }       //prints nose cone and nozzel
+    }
+
+    //prints the seperation Line
     private static void sepLine(){
 
-        System.out.print("+");
+        System.out.print("+");   //starts with the + char
 
-        for (int i = 0; i < WIDTH/2-1; i++){
+        for (int i = 0; i < WIDTH/2-1; i++){  // loop that prints "=+" for the width of the Drawing
 
             System.out.print("=*");
         }
 
-        System.out.print("+");
+        System.out.println("+");  // ends with the + char
 
-        System.out.println();
 
-    }         //prints the seperation Line
+    }
 
+    //prints ../\..pattern
     private static void upPoints(){
 
         for (int i = 1; i <=SIZE; i++){
@@ -69,14 +71,14 @@ public class DrawRocket {
             for (int j = 1; j <= SIZE-i; j++){ // left periods
                 System.out.print(".");
             }
-            for (int k = 1; k <=i; k++){
+            for (int k = 1; k <=i; k++){  // prints the leftn/\ section
                 System.out.print("/\\");
             }
             for (int j = 1; j <= 2*SIZE-(2*i); j++){ // middle periods
                 System.out.print(".");
             }
 
-            for (int k = 1; k <=i; k++){
+            for (int k = 1; k <=i; k++){ // prints the right /\ section
                 System.out.print("/\\");
             }
 
@@ -87,7 +89,9 @@ public class DrawRocket {
 
         }
 
-    }        //prints ../\..section
+    }
+
+    //prints ..\/.. pattern
     private static void downPoints(){
         for (int i = 1; i <=SIZE; i++){
             System.out.print("|");
@@ -95,14 +99,14 @@ public class DrawRocket {
             for (int j = 0; j <i-1; j++){ // outside periods
                 System.out.print(".");
             }
-            for (int k = SIZE-(i-1); k >=1 ; k--){
+            for (int k = SIZE-(i-1); k >=1 ; k--){  //prints  left \/ section
                 System.out.print("\\/");
             }
             for (int j = 0; j <i-1; j++){ // middle periods
                 System.out.print("..");
             }
 
-            for (int k = SIZE-(i-1); k >=1 ; k--){
+            for (int k = SIZE-(i-1); k >=1 ; k--){ //prints right \/ section
                 System.out.print("\\/");
             }
 
@@ -112,7 +116,7 @@ public class DrawRocket {
             System.out.print("|\n");
 
         }
-    }      //prints ..\/.. section
+    }
 
 }
 
